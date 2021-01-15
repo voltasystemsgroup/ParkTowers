@@ -1,0 +1,117 @@
+#ifndef __S2_BIPAD_OUTPUT_ZERO_DELAY_V_2_0_H__
+#define __S2_BIPAD_OUTPUT_ZERO_DELAY_V_2_0_H__
+
+
+
+
+/*
+* Constructor and Destructor
+*/
+
+/*
+* DIGITAL_INPUT
+*/
+
+
+/*
+* ANALOG_INPUT
+*/
+#define __S2_BIPAD_OUTPUT_ZERO_DELAY_V_2_0_VAL_IN_ANALOG_INPUT 0
+#define __S2_BIPAD_OUTPUT_ZERO_DELAY_V_2_0_DELAY_TIME_ANALOG_INPUT 1
+
+
+
+
+/*
+* DIGITAL_OUTPUT
+*/
+
+
+/*
+* ANALOG_OUTPUT
+*/
+#define __S2_BIPAD_OUTPUT_ZERO_DELAY_V_2_0_VAL_OUT_ANALOG_OUTPUT 0
+
+
+
+/*
+* Direct Socket Variables
+*/
+
+
+
+
+/*
+* INTEGER_PARAMETER
+*/
+/*
+* SIGNED_INTEGER_PARAMETER
+*/
+/*
+* LONG_INTEGER_PARAMETER
+*/
+/*
+* SIGNED_LONG_INTEGER_PARAMETER
+*/
+/*
+* INTEGER_PARAMETER
+*/
+/*
+* SIGNED_INTEGER_PARAMETER
+*/
+/*
+* LONG_INTEGER_PARAMETER
+*/
+/*
+* SIGNED_LONG_INTEGER_PARAMETER
+*/
+/*
+* STRING_PARAMETER
+*/
+
+
+/*
+* INTEGER
+*/
+
+
+/*
+* LONG_INTEGER
+*/
+
+
+/*
+* SIGNED_INTEGER
+*/
+
+
+/*
+* SIGNED_LONG_INTEGER
+*/
+
+
+/*
+* STRING
+*/
+
+/*
+* STRUCTURE
+*/
+
+START_GLOBAL_VAR_STRUCT( S2_BIPAD_OUTPUT_ZERO_DELAY_V_2_0 )
+{
+   void* InstancePtr;
+   struct GenericOutputString_s sGenericOutStr;
+   unsigned short LastModifiedArrayIndex;
+
+};
+
+START_NVRAM_VAR_STRUCT( S2_BIPAD_OUTPUT_ZERO_DELAY_V_2_0 )
+{
+};
+
+DEFINE_WAITEVENT( S2_BIPAD_OUTPUT_ZERO_DELAY_V_2_0, POWER_OFF_DELAY );
+
+
+#endif //__S2_BIPAD_OUTPUT_ZERO_DELAY_V_2_0_H__
+

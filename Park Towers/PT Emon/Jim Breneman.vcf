@@ -1,0 +1,18 @@
+BEGIN:VCARD
+PROFILE:VCARD
+VERSION:3.0
+MAILER:Microsoft Exchange
+PRODID:Microsoft Exchange
+FN:Jim Breneman
+N:Breneman;Jim;;;
+EMAIL;TYPE=INTERNET:jim.breneman@mainelectricsupply.com
+NOTE:\n\n
+ORG:;
+CLASS:PUBLIC
+ADR;TYPE=WORK:;;;;;;
+ADR;TYPE=HOME:;;;;;;
+ADR;TYPE=POSTAL:;;;;;;
+TITLE:
+X-MS-IMADDRESS:
+REV;VALUE=DATE-TIME:2019-07-10T20:34:33,333Z
+END:VCARD

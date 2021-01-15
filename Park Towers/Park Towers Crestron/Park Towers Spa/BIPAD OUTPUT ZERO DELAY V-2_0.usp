@@ -1,0 +1,26 @@
+Analog_Input Val_In, Delay_Time;
+Analog_Output Val_Out;
+
+Function PowerOffDelay( )
+{
+	Wait( Delay_Time, POWER_OFF_DELAY )
+	{
+       	Val_Out = 0;
+    }
+}
+
+
+
+Change Val_In
+{
+	If( Val_In > 0 )
+	{
+		Val_Out = Val_In;		
+		CancelWait( POWER_OFF_DELAY );
+	}
+	Else
+	{
+		PowerOffDelay( );		
+	}
+}
+	

@@ -1,0 +1,136 @@
+#ifndef __S2_DIRECTV_HR21PRO_V1_0_PROCESSOR_H__
+#define __S2_DIRECTV_HR21PRO_V1_0_PROCESSOR_H__
+
+
+
+
+/*
+* Constructor and Destructor
+*/
+
+/*
+* DIGITAL_INPUT
+*/
+#define __S2_DirecTV_HR21PRO_v1_0_Processor_GET_PRIMARY_STATUS_DIG_INPUT 0
+#define __S2_DirecTV_HR21PRO_v1_0_Processor_GET_CURRENT_TIME_DIG_INPUT 1
+
+
+/*
+* ANALOG_INPUT
+*/
+
+
+#define __S2_DirecTV_HR21PRO_v1_0_Processor_FROM_DEVICE_BUFFER_INPUT 0
+#define __S2_DirecTV_HR21PRO_v1_0_Processor_FROM_DEVICE_BUFFER_MAX_LEN 100
+CREATE_STRING_STRUCT( S2_DirecTV_HR21PRO_v1_0_Processor, __FROM_DEVICE, __S2_DirecTV_HR21PRO_v1_0_Processor_FROM_DEVICE_BUFFER_MAX_LEN );
+
+
+/*
+* DIGITAL_OUTPUT
+*/
+
+
+/*
+* ANALOG_OUTPUT
+*/
+#define __S2_DirecTV_HR21PRO_v1_0_Processor_TRANSPONDER_ANALOG_OUTPUT 0
+#define __S2_DirecTV_HR21PRO_v1_0_Processor_SIGNAL_QUALITY_ANALOG_OUTPUT 1
+
+#define __S2_DirecTV_HR21PRO_v1_0_Processor_CHANNEL_STRING_OUTPUT 2
+#define __S2_DirecTV_HR21PRO_v1_0_Processor_PRIMARY_TYPE_STRING_OUTPUT 3
+#define __S2_DirecTV_HR21PRO_v1_0_Processor_AUDIO_TYPE_STRING_OUTPUT 4
+#define __S2_DirecTV_HR21PRO_v1_0_Processor_CURRENT_DATE_STRING_OUTPUT 5
+#define __S2_DirecTV_HR21PRO_v1_0_Processor_CURRENT_TIME_STRING_OUTPUT 6
+#define __S2_DirecTV_HR21PRO_v1_0_Processor_DAY_OF_WEEK_STRING_OUTPUT 7
+#define __S2_DirecTV_HR21PRO_v1_0_Processor_TO_DEVICE_STRING_OUTPUT 8
+
+
+/*
+* Direct Socket Variables
+*/
+
+
+
+
+/*
+* INTEGER_PARAMETER
+*/
+/*
+* SIGNED_INTEGER_PARAMETER
+*/
+/*
+* LONG_INTEGER_PARAMETER
+*/
+/*
+* SIGNED_LONG_INTEGER_PARAMETER
+*/
+/*
+* INTEGER_PARAMETER
+*/
+/*
+* SIGNED_INTEGER_PARAMETER
+*/
+/*
+* LONG_INTEGER_PARAMETER
+*/
+/*
+* SIGNED_LONG_INTEGER_PARAMETER
+*/
+/*
+* STRING_PARAMETER
+*/
+
+
+/*
+* INTEGER
+*/
+CREATE_INTARRAY1D( S2_DirecTV_HR21PRO_v1_0_Processor, __ABYTE, 50 );;
+
+
+/*
+* LONG_INTEGER
+*/
+
+
+/*
+* SIGNED_INTEGER
+*/
+
+
+/*
+* SIGNED_LONG_INTEGER
+*/
+
+
+/*
+* STRING
+*/
+#define __S2_DirecTV_HR21PRO_v1_0_Processor_STEMP_STRING_MAX_LEN 50
+CREATE_STRING_STRUCT( S2_DirecTV_HR21PRO_v1_0_Processor, __STEMP, __S2_DirecTV_HR21PRO_v1_0_Processor_STEMP_STRING_MAX_LEN );
+
+/*
+* STRUCTURE
+*/
+
+START_GLOBAL_VAR_STRUCT( S2_DirecTV_HR21PRO_v1_0_Processor )
+{
+   void* InstancePtr;
+   struct GenericOutputString_s sGenericOutStr;
+   unsigned short LastModifiedArrayIndex;
+
+   unsigned short __ASEMAPHORE;
+   unsigned short __A;
+   unsigned short __APOLL;
+   DECLARE_INTARRAY( S2_DirecTV_HR21PRO_v1_0_Processor, __ABYTE );
+   DECLARE_STRING_STRUCT( S2_DirecTV_HR21PRO_v1_0_Processor, __STEMP );
+   DECLARE_STRING_STRUCT( S2_DirecTV_HR21PRO_v1_0_Processor, __FROM_DEVICE );
+};
+
+START_NVRAM_VAR_STRUCT( S2_DirecTV_HR21PRO_v1_0_Processor )
+{
+};
+
+
+
+#endif //__S2_DIRECTV_HR21PRO_V1_0_PROCESSOR_H__
+

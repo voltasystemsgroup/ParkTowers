@@ -1,0 +1,11 @@
+[Entries]
+MC3=tcp 192.168.1.100
+750=tcp 192.168.1.105
+
+[Settings]
+DefaultEntry=
+
+[Comments]
+MC3=
+750=
+

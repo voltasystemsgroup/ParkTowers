@@ -1,0 +1,12 @@
+<Device Model="MC2E">
+   <Network Type="Cresnet" Id="01">
+      <Device Model="TPS-4,TPS-4L," DeviceId="03" Name="Gym 4L"/>
+      <Device Model="CT-1000" DeviceId="04" Name="Mens Spa CT-1000"/>
+      <Device Model="CT-1000" DeviceId="05" Name="Womens Spa CT-1000"/>
+      <Device Model="CT-1000" DeviceId="06" Name="Rooms Spa CT-1000"/>
+      <Device Model="CT-1000" DeviceId="07" Name="Beauty Room CT-1000"/>
+      <Device Model="CNX-PAD8" DeviceId="44"/>
+      <Device Model="CNX-RMC" DeviceId="B6"/>
+   </Network>
+   <Network Type="Ethernet" Id="05"/>
+</Device>
